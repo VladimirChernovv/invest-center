@@ -1,0 +1,67 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: 'Graphik', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	background-color: #fff;
+	text-transform: uppercase;
+	color: #000;
+	margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	text-transform: none;
+}
+
+p {
+	margin: 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+}
+
+ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.btn {
+	display: inline-block;
+	// vertical-align: top;
+	width: 250px;
+	padding: 20px 77px;
+	background: #003DB1;
+	cursor: pointer;
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 30px;
+	color: #fff;
+	text-transform: none;
+	text-decoration: none;
+	text-align: center;
+	transition: background-color .2s linear,color .2s linear;
+}
+.btn:hover {
+		background-color: #ED8200;
+}
