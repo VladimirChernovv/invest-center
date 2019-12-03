@@ -1,0 +1,45 @@
+.transfer {
+	margin-top: 24px;
+	&__wrap {
+		// background: #f4f4f6 url(../img/transfer/visa-cards.png) no-repeat center;
+		// background-position: 96% 84%;
+		display: flex;
+		background-color: #f4f4f6;
+		// padding-left: 40px;
+		// padding-top: 27px;
+		// padding-bottom: 52px;
+		padding: 27px 0 52px 40px;
+		position: relative;
+	}
+	&__title {
+		font-weight: 900;
+		font-size: 25px;
+		color: #000;
+		margin-top: 25px;
+	 }
+	&__descrition {
+		font-weight: 400;
+		width: 420px;
+		font-size: 14px;
+		line-height: 20px;
+		color: #8890A1;
+		text-transform: none;
+		margin-top: 10px;
+		margin-bottom: 24px;
+		.transfer__link {
+			color: #003DB1;
+		}
+		.transfer__link:hover {
+				color: #ED8200;
+		}
+	}
+	&__photo {
+		position: absolute;
+		display: block;
+    max-width: 100%;
+    height: auto;
+		bottom: 0;
+		right: 32px;
+		z-index: 1;
+	}
+}

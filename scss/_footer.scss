@@ -1,0 +1,26 @@
+.footer {
+	background-color: #1e1f28;
+	padding: 73px 0 60px 0;
+	margin-top: 146px;
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__title {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 30px;
+		color: #FFFFFF;
+	}
+	&__link {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 40px;
+		color: #8890A1;
+		text-transform: none;
+	}
+	&__link:hover {
+			color: #ED8200;
+		}
+}

@@ -1,0 +1,24 @@
+.metals {
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+	}
+
+}
+.services__heading {
+		font-weight: 500;
+		font-size: 18px;
+		text-transform: none;
+		color: #FF5D39;
+		margin-bottom: 25px;
+		img {
+			margin-right: 5px;
+		}
+		span {
+			color: #8890A1;
+			margin-left: 4px;
+		}
+	}
+.services__heading_euro{
+	margin-bottom: 20px;
+}

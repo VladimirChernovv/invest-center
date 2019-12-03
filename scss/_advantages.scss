@@ -1,0 +1,58 @@
+.advantages {
+	margin-top: 73px;
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&__market {
+		background-color: #f4f4f6;
+		padding: 31px 40px 215px 40px;
+		width: 66%;
+		position: relative;
+	}
+	&__title {
+			font-weight: 900;
+    	font-size: 25px;
+    	color: #000;
+			margin-top: 25px;
+			line-height: 30px;
+	}
+	&__text {
+		font-weight: 400;
+		width: 420px;
+		font-size: 14px;
+		line-height: 20px;
+		color: #8890A1;
+		text-transform: none;
+		margin-top: 10px;
+	}
+	.sign {
+		width: 300px;
+	}
+	&__phone {
+		display: block;
+    max-width: 100%;
+    height: auto;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+	}
+	&__bank {
+		background-color: #f4f4f6;
+		padding: 33px 48px 189px 33px;
+		width: 31%;
+		position: relative;
+	}
+	&__online {
+		background-color: #f4f4f6;
+		padding: 33px 48px 144px 39px;
+		width: 31%;
+		position: relative;
+		margin-top: 30px;
+	}
+	.mastercard {
+		margin-top: 30px;
+	}
+}

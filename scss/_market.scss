@@ -1,0 +1,202 @@
+.market {
+	margin-top: 95px;
+	// padding-top: 70px;
+	&__title {
+		font-weight: 800;
+		font-size: 35px;
+	}
+}
+
+.services {
+	margin-top: 41px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__item {
+		width: 49%;
+	}
+	&__item:nth-child(1) {
+		margin-bottom: 55px;
+	}
+	&__item:nth-child(2) {
+		margin-bottom: 55px;
+	}
+
+	
+
+	// .services__heading {
+	// 	font-weight: 500;
+	// 	font-size: 18px;
+	// 	text-transform: none;
+	// 	color: #FF5D39;
+	// 	margin-bottom: 25px;
+	// 	img {
+	// 		margin-right: 5px;
+	// 	}
+	// 	span {
+	// 		color: #8890A1;
+	// 		margin-left: 4px;
+	// 	}
+	// }
+	// .services__heading_euro{
+	// 	margin-bottom: 20px;
+	// }
+	&__card {
+		display: flex;
+		background-color: #acaccd;
+		// background: #acaccd url(../img/market/girl.png) no-repeat right bottom;
+    // 	background-position: 100% 53%;
+		padding: 50px 100px 118px 30px;
+		// width: 570px;
+		position: relative;
+			.services__suptitle {
+				font-weight: 500;
+				font-size: 12px;
+				text-transform: uppercase;
+				color: rgba(255, 255, 255, 0.5);
+			}
+			.services__subtitle {
+				font-weight: 900;
+				font-size: 25px;
+				color: #FFFFFF;
+				margin-top: 45px;
+			}
+			.services__benefit {
+				font-weight: 400;
+				font-size: 14px;
+				color: #FFFFFF;
+				text-transform: none;
+				margin-top: 16px;
+				line-height: 20px;
+			}
+			.services__photo {
+				position: absolute;
+				display: block;
+    		max-width: 100%;
+				height: auto;
+				z-index: 1;
+				right: 0;
+				bottom: 18px;
+			}
+			.services__photo_man {
+				right: 0;
+				bottom: 0;
+			}
+	}
+
+	&__table {
+		border: 1px solid rgba(136, 144, 161, 0.2);
+		padding: 42px 29px 18px 25px;
+		th {
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 13px;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			color: #8890A1;
+			border-bottom: 1px solid #e7e9ec;
+			padding-bottom: 12px;
+			padding-right: 44px;
+		}
+
+		td {
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 18px;
+			color: #000000;
+			padding-top: 36px;
+			padding-bottom: 0;
+		}
+
+		.services__unit {
+			font-weight: 900;
+			font-size: 18px;
+			// line-height: 20px;
+			// letter-spacing: 0.05em;
+			text-transform: uppercase;
+			color: #8890A1;
+		}
+	}
+
+	&__metals {
+		border: 1px solid #e7e9ec;
+		padding: 44px 29px 25px 27px;
+		.services__information {
+			display: flex;
+			font-weight: normal;
+			font-size: 12px;
+			// line-height: 13px;
+			// letter-spacing: 0.05em;
+			text-transform: uppercase;
+			color: #8890A1;
+			border-bottom: 1px solid #e7e9ec;
+			padding-bottom: 12px;
+			justify-content: space-around;
+		}
+		.services__cell {
+			display: flex;
+			// align-items: center;
+			margin-top: 29px;
+			img {
+				max-width: 100%;
+    		height: auto;
+				margin-right: 41px;
+			}
+			.services__data {
+				font-weight: 400;
+				font-size: 18px;
+				color: #8890A1;
+				text-transform: none;
+				.services__george {
+					margin: 26px 0 15px 0;
+				}
+				.silver {
+					margin-top: 24px;
+				}
+				span {
+					font-weight: 500;
+					color: #000;
+				}
+				.services__value {
+					margin-right: 101px;
+				}
+				.services__buy {
+					margin-right: 55px
+				}
+				.left {
+					margin-right: 92px;
+				}
+			}
+
+		}
+	}
+
+	.lower {
+			margin-top: 25px;
+	}
+
+	.euro-card {
+		background-color: #bea08b;
+		// background: #bea08b url(../img/market/man.png) no-repeat right bottom;
+		padding-bottom: 138px; 
+	}
+	&__request {
+		background-color: #f3f4f6;
+		// width: 570px;
+		padding: 26px 30px 22px 29px;
+		display: flex;
+		justify-content: space-between;
+		border: 1px solid #e7e9ec;
+		.services__action {
+			font-weight: 500;
+			font-size: 18px;
+			color: #8890A1;
+			text-transform: none;
+		}
+		.services__arrow {
+			.services__img {
+				
+			}
+		}
+	}
+}
