@@ -1,8 +1,10 @@
 .transfer {
+	// background: #f4f4f6 url(../img/transfer/visa-cards.png) no-repeat ;
+	// background-position: 715px 0px;
 	margin-top: 24px;
 	&__wrap {
-		// background: #f4f4f6 url(../img/transfer/visa-cards.png) no-repeat center;
-		// background-position: 96% 84%;
+		// background: #f4f4f6 url(../img/transfer/visa-cards.png) no-repeat right;
+		// background-position: 715px 0px;
 		display: flex;
 		background-color: #f4f4f6;
 		// padding-left: 40px;
@@ -10,6 +12,7 @@
 		// padding-bottom: 52px;
 		padding: 27px 0 52px 40px;
 		position: relative;
+		overflow: hidden;
 	}
 	&__title {
 		font-weight: 900;
@@ -41,5 +44,72 @@
 		bottom: 0;
 		right: 32px;
 		z-index: 1;
+	}
+}
+
+/* 972 - 1024px */
+@media screen and (max-width: 1024px) {
+
+	.transfer {
+		&__wrap {
+			padding-top: 7px;
+			
+		}
+		&__descrition {
+			width: 290px;
+		}
+		&__photo {
+			right: -45px;
+		}
+	}
+}
+
+/* 769 - 972px */
+@media screen and (max-width: 972px) {
+	.transfer {
+		&__photo {
+			right: -125px;
+		}
+	}
+}
+
+/* 577 - 768px */
+@media screen and (max-width: 768px) {
+	.transfer {
+		&__photo {
+			width: 64%;
+    	bottom: 125px;
+    	right: 110px;
+		}
+		&__title {
+			width: 245px;
+			font-size: 20px;
+		}
+		&__descrition {
+			margin-bottom: 223px;
+		}
+	}
+}
+
+/* 320 - 576 */
+@media screen and (max-width: 576px) {
+	.transfer {
+		&__wrap {
+			padding-left: 14px;
+		}
+		&__title {
+			font-size: 18px;
+		}
+		&__descrition {
+			width: 235px;
+		} 
+		&__photo {
+			width: 75%;
+    	right: 4px;
+		}
+		.small {
+			width: 155px;
+			padding: 20px 28px;
+		}
 	}
 }

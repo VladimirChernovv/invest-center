@@ -56,3 +56,60 @@
 		margin-top: 30px;
 	}
 }
+
+/* 1024 - 1320px */
+@media screen and (max-width: 1320px) {
+	.advantages {
+		&__market {
+			width: 100%;
+		}
+		&__bank {
+			margin-top: 30px;
+			width: 47%;
+		}
+		&__online {
+			width: 47%;
+		}
+		
+	}
+	.mastercard {
+			width: 100%;
+		}
+}
+
+/* 769 - 1024px */
+@media screen and (max-width: 1024px) {
+	.advantages {
+		&__market {
+			width: 47%;
+			padding-right: 5px;
+			padding-left: 25px;
+		}
+		&__text {
+			width: auto;
+		}
+		&__bank {
+			margin-top: 0;
+			padding-right: 4px;
+			padding-left: 25px;
+			width: 47%;
+		}
+		&__online {
+			width: 47%;
+			padding-left: 25px;
+		}
+	}
+	.advantages .sign {
+		width: auto;
+	}
+	.specialist {
+			width: 127px;
+	}
+	.mastercard {
+		width: 47%;
+		padding-left: 25px;
+	}
+	.stone {
+		width: 250px;
+	}
+}

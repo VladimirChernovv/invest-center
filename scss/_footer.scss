@@ -23,4 +23,127 @@
 	&__link:hover {
 			color: #ED8200;
 		}
+	&__cell {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.lower-column {
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+	.lower-column:nth-child(3) {
+		margin-top: 20px;
+	}
+	.lower-column:nth-child(4) {
+		margin-top: 20px;
+	}
+	// .accordion__control {
+	// 	display: block;
+	// 	padding: 3px 10px;
+	// 	color: #fff;
+	// 	text-transform: none;
+	// }
+	// .accordion__control::before {
+	// 	content: '';
+	// 	display: inline-block;
+	// 	width: 10px;
+	// 	height: 10px;
+	// 	margin-right: 10px;
+	// 	border: 1px solid #fff;
+	// 	border-width: 1px 1px 0 0;
+	// 	transform: translateY(-25%) rotate(135deg);
+	// }
+	// .accordion__panel {
+	// 	display: none;
+	// 	padding: 10px;
+	// 	color: color: #8890A1;;
+	// }
+}
+
+
+
+/* 769 - 1024px */
+@media screen and (max-width: 1024px) {
+	.footer {
+		margin-top: 96px;
+		&__content {
+			display: none;
+		}
+		// .accordion {
+		// 	position: relative;
+		// 	overflow: hidden;
+		// }
+		// .accordion__control {
+		// 	display: block;
+		// 	padding: 3px 10px;
+		// 	color: #fff;
+		// 	text-transform: none;
+		// }
+		// .accordion__control::before {
+		// 	content: '';
+		// 	display: inline-block;
+		// 	width: 10px;
+		// 	height: 10px;
+		// 	margin-right: 10px;
+		// 	border: 1px solid #fff;
+		// 	border-width: 1px 1px 0 0;
+		// 	transform: translateY(-25%) rotate(135deg);
+		// 	position: absolute;
+		// 	right: 0;
+		// }
+		// .accordion__panel {
+		// 	display: none;
+		// 	padding: 10px;
+		// 	color: #8890A1;;
+		// }
+		// .accordion__control:hover,
+		// .accordion__control:focus {
+		// 	background-color: #4c4d53;
+			
+		// }
+		// .accordion__control_active {
+		// 	border-bottom: 1px solid red;
+		// }
+		// // меняю направление стрелки
+		// .accordion__control_active::before {
+		// 	transform: translateY(25%) rotate(-45deg);
+		// }
+		// .accordion__panel_active {
+		// 	display: block;
+		// }
+	}
+}
+
+/* 576 - 768px */
+@media screen and (max-width: 768px) {
+	.footer {
+		&__cell {
+			display: inline-block;
+			flex-wrap: nowrap;
+		}
+		.lower-column {
+			flex-basis: 0;
+    	max-width: none;
+		}
+		&__title {
+			cursor: pointer;
+		}
+		&__list {
+			display: none;
+		}
+		.lower-column.open ul {
+      //display: block !important;
+    }
+	}
+}
+
+.open {
+	display: block !important;
+}
+
+/* 320 - 576px */
+@media screen and (max-width: 576px) {
+	.footer {
+		margin-top: 33px;
+	}
 }

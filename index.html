@@ -257,7 +257,7 @@
     
      <div class="header__slider">
 
-        <div class="header__slider-item slider-item container" style="background-image: url(./img/header/man-bg.png);">
+        <div class="header__slider-item slider-item " style="background-image: url(./img/header/man-bg.png);"> <!-- header__slider-item slider-item - удалил класс container т.к. этот класс ещё больше сжимал слайдер -->
           <div class="slider-item__info">
             <h1 class="slider-item__info-title">Центр для успешных инвестиций</h1>
             <p class="slider-item__info-text">
@@ -270,7 +270,7 @@
         </div>
       
         
-        <div class="header__slider-item slider-item" style="background-image: url(./img/header/man-bg.png);">
+        <div class="header__slider-item slider-item " style="background-image: url(./img/header/man-bg.png);">
           <div class="slider-item__info">
             <h1 class="slider-item__info-title">Центр для успешных инвестиций - 2</h1>
             <p class="slider-item__info-text">
@@ -281,7 +281,7 @@
           <!-- <img class="slider-item__photo" src="../img/header/man-bg.png" alt="photo"> -->
         </div>
         
-        <div class="header__slider-item slider-item" style="background-image: url(./img/header/man-bg.png);">
+        <div class="header__slider-item slider-item " style="background-image: url(./img/header/man-bg.png);">
           <div class="slider-item__info">
             <h1 class="slider-item__info-title">Центр для успешных инвестиций - 3</h1>
             <p class="slider-item__info-text">
@@ -542,7 +542,7 @@
             Быстрый и удобный способ перевести денежные средства. Узнайте о <a class="transfer__link" href="#">лимитах и
               комиссиях</a>
           </p>
-          <a href="#" class="btn">Перевести</a>
+          <a href="#" class="btn small">Перевести</a>
         </div>
         <img class="transfer__photo" src="img/transfer/visa-cards.png" alt="visa-cards">
       </div>
@@ -568,13 +568,13 @@
         <div class="advantages__online">
           <h3 class="advantages__title">До +0,5% годовых при дистанционном оформлении</h3>
           <p class="advantages__text sign">Начался прием карт МИР<br> по выдаче наличных в сети<br> банкоматов и дополнительных<br> офисов.</p>
-          <img class="advantages__phone" src="img/advantages/specialist.png" alt="specialist">
+          <img class="advantages__phone specialist" src="img/advantages/specialist.png" alt="specialist">
         </div>
 
         <div class="advantages__market mastercard">
           <h3 class="advantages__title">Бесконтактная карта<br> MasterCard</h3>
           <p class="advantages__text">Вы можете гораздо быстрее произвести оплату на АЗС, парковке, в кафе или в магазине одним касанием!</p>
-          <img class="advantages__phone" src="img/advantages/rock.png" alt="phone">
+          <img class="advantages__phone stone" src="img/advantages/rock.png" alt="phone">
         </div>
         <!-- <div class="advantages__online"></div>
         <div class="advantages__mastercard"></div> -->
@@ -706,6 +706,121 @@
         </div>
 
       </div>
+
+      <div class="footer__cell">
+
+        <div id="sweeties" class="footer__column lower-column">
+          <h4 class="footer__title" >О банке</h4>
+          <ul class="footer__list ">
+            <li class="footer__line">
+              <a class="footer__link" href="#">Реквизиты</a>
+            </li>
+            <li class="footer__line">
+              <a class="footer__link" href="#">Раскрытие информации</a>
+            </li>
+            <li class="footer__line">
+              <a class="footer__link" href="#">Процентные ставки по вкладам<br> физ. лиц</a>
+            </li>
+            <li class="footer__line">
+              <a class="footer__link" href="#">Список лиц, под контролем либо значительным<br> влиянием которых находится
+                Банк</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="sweeties" class="footer__column lower-column">
+          <h4 class="footer__title">Частым клиентам</h4>
+          <ul class="footer__list ">
+            <li class="footer__line">
+              <a class="footer__link" href="#">Банковские карты</a>
+            </li>
+            <li class="footer__line">
+              <a class="footer__link" href="#">Вклады</a>
+            </li>
+            <li class="footer__line">
+              <a class="footer__link" href="#">Тарифы</a>
+            </li>
+            <li class="footer__line">
+              <a class="footer__link" href="#">Защитные признаки банкнот Банка России</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div id="sweeties" class="footer__column lower-column">
+          <h4 class="footer__title">Корпоративным клиентам</h4>
+          <ul class="footer__list ">
+            <li class="footer__line">
+              <a class="footer__link" href="#">Как стать клиентом</a>
+            </li>
+            <li class="footer__line">
+              <a class="footer__link" href="#">Кредитование</a>
+            </li>
+            <li class="footer__line">
+              <a class="footer__link" href="#">Интернет-банк</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div id="sweeties" class="footer__column lower-column">
+          <h4 class="footer__title" >Услуги на РЦБ</h4>
+          <ul class="footer__list ">
+            <li class="footer__line">
+              <a class="footer__link" href="#">Доступ на валютный рынок</a>
+            </li>
+            <li class="footer__line">
+              <a class="footer__link" href="#">Брокерское обслуживание</a>
+            </li>
+            <li class="footer__line">
+              <a class="footer__link" href="#">Открыть брокерский счет</a>
+            </li>
+            <li class="footer__line">
+              <a class="footer__link" href="#">Еврооблигации</a>
+            </li>
+            <li class="footer__line">
+              <a class="footer__link" href="#">Торговля на ММВБ</a>
+            </li>
+            <li class="footer__line">
+              <a class="footer__link" href="#">Облигации</a>
+            </li>
+            <li class="footer__line">
+              <a class="footer__link" href="#">QUIK трейдинг</a>
+            </li>
+            <li class="footer__line">
+              <a class="footer__link" href="#">Transaq</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- <div id="accordion">
+        <span>О банке</span>
+        <div>Реквизиты</div>
+        <div>Раскрытие информации</div>
+        <div>Процентные ставки по вкладам физ. лиц</div>
+        <div>
+          Список лиц, под контролем либо значительным влиянием которых находится Банк
+        </div>
+        <span>Частым клиентам</span>
+        <div>Банковские карты</div>
+        <div>Вклады</div>
+        <div>Тарифы</div>
+        <div>Защитные признаки банкнот Банка России</div>
+        <span>Корпоративным клиентам</span>
+        <div>Как стать клиентом</div>
+        <div>Кредитование</div>
+        <div>Интернет-банк</div>
+        <span>Услуги на РЦБ</span>
+        <div>Доступ на валютный рынок</div>
+        <div>Брокерское обслуживание</div>
+        <div>Открыть брокерский счет</div>
+        <div>Еврооблигации</div>
+        <div>Торговля на ММВБ</div>
+        <div>Облигации</div>
+        <div>QUIK трейдинг</div>
+        <div>Transaq</div>
+      </div> -->
+
     </div>
   </footer>
   

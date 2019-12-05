@@ -29,8 +29,10 @@ p {
 }
 
 .container {
-	max-width: 1170px;
+	max-width: 1302px;
 	margin: 0 auto;
+	padding-left: 66px;
+	padding-right: 66px;
 }
 
 a {
@@ -64,4 +66,35 @@ ul, li {
 }
 .btn:hover {
 		background-color: #ED8200;
+}
+
+// .accordion__control {
+// 	display: block;
+// 	padding: 3px 10px;
+// 	color: #fff;
+// 	text-transform: none;
+// }
+// .accordion__control::before {
+// 	content: '';
+// 	display: inline-block;
+// 	width: 10px;
+// 	height: 10px;
+// 	margin-right: 10px;
+// 	border: 1px solid #fff;
+// 	border-width: 1px 1px 0 0;
+// 	transform: translateY(-25%) rotate(135deg);
+// }
+// .accordion__panel {
+// 	display: none;
+// 	padding: 10px;
+// 	color: color: #8890A1;;
+// }
+
+
+/* 320-576 */
+@media screen and (max-width: 576px) {
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }

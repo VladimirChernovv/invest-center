@@ -8,8 +8,18 @@ $('.header__slider').slick ({
 	// nextArrow: false,
 	arrows: false,
 });
+	
+	let titleElem = document.querySelectorAll('.footer__title');
 
-  
+	for ( let i = 0; i < titleElem.length; i++ ) {
+		titleElem[i].addEventListener('click', show_list)
+	}
+
+	function show_list(e) {
+		e.target.nextElementSibling.classList.toggle('open');
+	}
+
+
 });
 
 // document.getElementById('nav').onmouseover = function (event) {
@@ -151,3 +161,47 @@ body.addEventListener('click', function (e) {
 		submenu4.style.display = "none";
 	}
 });
+
+//Аккордеон
+
+// function accordion(selector) {
+// 	let accordion = $(selector);
+// 	let spans = accordion.children('span');
+// 	let divs = accordion.children('div');
+
+// 	accordion
+// 	.addClass('accordion')
+// 	.on('click', '.accordion__control', function (e) {
+// 		e.preventDefault();
+
+// 		let a = $(this);
+// 		let active = a.hasClass('accordion__control_active');
+
+// 		accordion
+// 			.find('.accordion__control_active')
+// 			.removeClass('accordion__control_active');
+// 		accordion
+// 			.find('.accordion__panel_active')
+// 			.removeClass('accordion__panel_active');
+
+// 		if (!active) {
+// 			a
+// 				.addClass('accordion__control_active')
+// 				.next()
+// 				.addClass('accordion__panel_active');
+// 		}
+// 	});
+
+// 	spans.each(function (){
+// 		let span = $(this);
+// 		span.replaceWith(
+// 			'<a href="#" class="accordion__control">'
+// 			+ span.text()
+// 			+ '</a>'
+// 		);
+// 	});
+// 	divs.addClass('accordion__panel')
+// }
+
+// accordion('#accordion');
+

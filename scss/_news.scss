@@ -44,3 +44,34 @@
 			color: #ED8200;
 	}
 }
+
+/* 769 - 1024px */
+@media screen and (max-width: 1024px) {
+	.news {
+		&__archive {
+			font-size: 14px;
+		}
+		&__list {
+			flex-wrap: wrap;
+		}
+		&__section {
+			width: 450px;
+			margin-bottom: 40px;
+		}
+	}
+}
+
+/* 320 - 576px */
+@media screen and (max-width: 576px) {
+	.news {
+		&__wrap {
+			flex-direction: column;
+		}
+		&__date {
+			font-size: 12px;
+		}
+		&__link {
+			font-size: 14px;
+		}
+	}
+}
