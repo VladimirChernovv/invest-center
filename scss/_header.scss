@@ -72,6 +72,9 @@
 	.leng {
 		margin-left: 37px;
 	}
+	&__eye {
+		display: none;
+	}
 	&__tel {
 		font-weight: 500;
 		font-size: 12px;
@@ -108,6 +111,28 @@
 	.corporate {
 		margin-right: 51px;
 	}
+	&__box {
+		padding-top: 45px;
+		padding-bottom: 50px;
+	}
+	&__wrap-lower {
+		display: flex;
+	}
+	&__menu-lower:nth-child(2) {
+		margin-left: 100px;
+	}
+	&__item-lower {
+		margin-top: 25px;
+	}
+	&__link-lower {
+		font-weight: 400;
+		font-size: 18px;
+		color: #8890A1;
+		text-transform: none;
+	}
+	&__link-lower:hover {
+		color: #ED8200;
+	}
 
 	.submenu1, .submenu2, .submenu3, .submenu4  {
 		position: absolute;
@@ -121,7 +146,6 @@
 		// opacity: 0;
 		// visibility: hidden;
 		transition: all .2s ease;	
-
 		.container {
 			.submenu__wrap {
 				display: flex;
@@ -158,7 +182,7 @@
 				padding-top: 24px;
 			}
 		}
-		
+	
 		&__wrap {
 			display: flex;
 			justify-content: space-between;
@@ -289,4 +313,29 @@
 }
 .slick-dots .slick-active button {
 	background-color: #003DB1;
+}
+
+/* 768 - 1024px */
+@media screen and (max-width: 1024px) {
+	.header {
+		&__sup-menu {
+			display: none;
+		}
+		.leng {
+			margin-left: 25px;
+		}
+		&__eye {
+			display: block;
+			margin-left: 20px;
+		}
+		&__icon {
+			display: block;
+		}
+		&__tel {
+			margin-left: 20px;
+		}
+		.submenu__wrap.lower-wrap {
+			border-bottom: 1px solid #8890A1;
+		}
+	}
 }
