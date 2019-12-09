@@ -5,7 +5,6 @@ $(function(){
 		infinite: true,
 		fade: true,
 		arrows: false,
-		
 	});
 
 	//Открывающееся верхнее меню

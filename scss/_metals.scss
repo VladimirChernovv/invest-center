@@ -29,5 +29,21 @@
 		&__remove {
 			display: none;
 		}
+		.services__chart {
+			width: 100%;
+		}
+		.services__table th {
+			padding-right: 30px;
+		}
+		.services__metals {
+			padding-bottom: 7px;
+		} 
+		.services__cell {
+			margin-top: 10px;
+		}
+		
+	}
+	.services__metals .services__cell .services__data .services__value {
+		margin-right: 30px;
 	}
 }
