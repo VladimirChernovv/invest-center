@@ -4,11 +4,26 @@ $(function(){
 		dots: true,
 		infinite: true,
 		fade: true,
-		// prevArrow: false,
-		// nextArrow: false,
 		arrows: false,
+		responsive: [
+			{
+				breakpoint
+			}
 	});
+
+	//Открывающееся верхнее меню
+	// let titleWrap = document.querySelectorAll('.header__title-wrap');
+
+	// for (let i = 0; i < titleWrap.length; i++) {
+	// 	titleWrap[i].addEventListener('click', show_list)
+	// }
+
+	// function show_list(e) {
+	// 	e.target.nextElementSibling.classList.toggle('open');
+	// }
+
 	
+	//Открывающееся нижнее меню в footer
 	let titleElem = document.querySelectorAll('.footer__title');
 
 	for ( let i = 0; i < titleElem.length; i++ ) {

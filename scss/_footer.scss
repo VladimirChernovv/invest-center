@@ -24,6 +24,10 @@
 	// 	transform: translateY(-25%) rotate(135deg);
 	// 	right: -8%;
 	// 	position: absolute;
+	// 	transition: 0.5s;	
+	// }
+	// .open-title::before{
+	// 	transform: rotate(180deg);
 	// }
 	&__link {
 		font-weight: 400;

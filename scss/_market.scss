@@ -46,7 +46,7 @@
 		background-color: #acaccd;
 		// background: #acaccd url(../img/market/girl.png) no-repeat right bottom;
     // 	background-position: 100% 53%;
-		padding: 50px 100px 118px 30px;
+		padding: 50px 11px 118px 30px;
 		// width: 570px;
 		position: relative;
 			.services__suptitle {
@@ -200,3 +200,16 @@
 		}
 	}
 }
+
+/* 1024 - 1200 px */
+@media screen and (max-width: 1200px) {
+	.market {
+		.services__photo {
+			
+		}
+		.services__subtitle {
+			font-size: 20px;
+		}
+	}
+}
+

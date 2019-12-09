@@ -22,3 +22,12 @@
 .services__heading_euro{
 	margin-bottom: 20px;
 }
+
+/* 1024 - 1320px */
+@media screen and (max-width: 1320px) {
+	.metals {
+		&__remove {
+			display: none;
+		}
+	}
+}
