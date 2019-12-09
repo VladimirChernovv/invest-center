@@ -5,10 +5,7 @@ $(function(){
 		infinite: true,
 		fade: true,
 		arrows: false,
-		responsive: [
-			{
-				breakpoint
-			}
+		
 	});
 
 	//Открывающееся верхнее меню
