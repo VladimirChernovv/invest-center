@@ -41,9 +41,18 @@
 		.services__cell {
 			margin-top: 10px;
 		}
-		
 	}
 	.services__metals .services__cell .services__data .services__value {
 		margin-right: 30px;
 	}
+}
+
+/* 768 - 1024px */
+@media screen and (max-width: 1024px) {
+	.metals {
+		.services__item:nth-child(2) {
+			display: none;
+		}
+	}
+	
 }

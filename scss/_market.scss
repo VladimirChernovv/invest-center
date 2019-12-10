@@ -213,3 +213,15 @@
 	}
 }
 
+/* 768 - 1024 px */
+@media screen and (max-width: 1024px) {
+	.market {
+		.services__item:nth-child(1) {
+			display: none;
+		}
+		.services__item:nth-child(2) {
+			display: none;
+		}
+	}
+}
+
