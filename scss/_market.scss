@@ -5,6 +5,9 @@
 		font-weight: 800;
 		font-size: 35px;
 	}
+	&__slider {
+		display: none;
+	}
 }
 
 .services {
@@ -216,11 +219,24 @@
 /* 768 - 1024 px */
 @media screen and (max-width: 1024px) {
 	.market {
+		&__slider {
+			display: block;
+		}
+		&__main {
+			width: 49%;
+		}
+		
 		.services__item:nth-child(1) {
 			display: none;
 		}
 		.services__item:nth-child(2) {
 			display: none;
+		}
+		.services__card {
+			padding-top: 75px;
+		}
+		.euro-card {
+			background-color: #bea08b;
 		}
 	}
 }

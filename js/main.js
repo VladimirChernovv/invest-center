@@ -10,9 +10,12 @@ $(function(){
 	});
 
 	$('.market__slider').slick({
+		
 		dots: true,
 		infinite: true,
-		fade: true,
+		// slidesToShow: 2,
+		// slidesToScroll: 1,
+		// fade: true,
 		arrows: false,
 	});
 
