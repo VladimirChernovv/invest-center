@@ -161,6 +161,9 @@
 		color: #ED8200;
 		font-size: 18px;
 	}
+	&__photo-man {
+		display: none !important;
+	}
 
 	.submenu1, .submenu2, .submenu3, .submenu4  {
 		position: absolute;
@@ -262,7 +265,7 @@
 }
 
 .slick-list.draggable {
-	width: 1170px;
+	max-width: 1170px;
 	margin: 0 auto;
 }
 
@@ -309,15 +312,15 @@
 	}
 }
 
-.slider-item__photo {
-	position: absolute;
-	display: block;
-	max-width: 100%;
-	height: auto;
-	bottom: 0;
-	right: -56px;
-	z-index: 1;
-}
+// .slider-item__photo {
+// 	position: absolute;
+// 	display: none;
+// 	max-width: 100%;
+// 	height: auto;
+// 	bottom: 0;
+// 	right: -56px;
+// 	z-index: 1;
+// }
 
 .slick-dots {
 	display: flex;
@@ -384,6 +387,17 @@
 		// 	width: 45%;
 		// 	flex: 0;
 		// }
+		&__slider-item {
+			background-image: none !important;
+		}
+		&__photo-man {
+			position: absolute;
+			width: 45%;
+			height: auto;
+			bottom: 0;
+			right: -56px;
+			display: block !important;
+		}
 		.submenu__wrap.lower-wrap {
 			border-bottom: 1px solid #8890A1;
 			flex-wrap: wrap;
@@ -394,6 +408,10 @@
 			width: 100%;
 			justify-content: space-between;
 		}
+	}
+	.slider-item__info-title {
+		font-size: 45px;
+		width: 475px;
 	}
 }
 
@@ -423,6 +441,9 @@
 		.submenu__card {
 			display: block;
 		}
+		&__photo-man {
+			width: 50%;
+		}
 	}
 	.header .submenu2 .container .lower-wrap {
 		display: block;
@@ -441,6 +462,16 @@
 	}
 	.header .submenu4 .container .submenu__wrap .submenu__list {
 		width: auto;
+	}
+	.slider-item {
+		padding-top: 34px;
+	}
+	.slider-item__info-title {
+		font-size: 35px;
+    line-height: 40px;
+	}
+	.slider-item__info-text {
+		width: 329px;
 	}
 }
 
@@ -494,5 +525,25 @@
 	.header .submenu4 .card-btn {
 		width: 260px;
 		font-size: 14px;
+	}
+	.slider-item {
+    padding-top: 20px;
+	}
+	.slider-item__info-title {
+		width: 215px;
+    font-size: 20px;
+		line-height: 25px;
+		margin: 0 0 10px 0;
+	}
+	.slider-item__info-text {
+		font-size: 14px;
+		margin-bottom: 35px;
+		width: 244px;
+	}
+	.slider-item .upper {
+		width: 155px;
+    font-size: 12px;
+    padding: 20px;
+
 	}
 }
