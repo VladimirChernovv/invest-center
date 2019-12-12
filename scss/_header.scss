@@ -265,8 +265,10 @@
 }
 
 .slick-list.draggable {
-	max-width: 1170px;
+	max-width: 1302px;
 	margin: 0 auto;
+	padding-left: 66px;
+	padding-right: 66px;
 }
 
 .header__slider {
@@ -346,6 +348,16 @@
 	background-color: #003DB1;
 }
 
+/* 1024 - 1200px */
+@media screen and (max-width: 1200px) {
+	.header {
+
+	}
+	.slider-item__info-title {
+		font-size: 63px;
+	}
+}
+
 /* 768 - 1024px */
 @media screen and (max-width: 1024px) {
 	.header {
@@ -418,6 +430,12 @@
 /* 576 - 768px */
 @media screen and (max-width: 768px) {
 	.header {
+		&__wrap {
+			display: none;
+		}
+		&__list {
+			display: block;
+		}
 		&__search {
 			display: block;
 		}
@@ -428,6 +446,8 @@
 		&__bar {
 			display: block;
 			margin-left: 20px;
+			width: 20px;	
+			height: 20px;
 		}
 		&__bar-icon {
 			display: block;
@@ -441,9 +461,15 @@
 		.submenu__card {
 			display: block;
 		}
+		&__wrap-lower {
+			display: block;
+		}
 		&__photo-man {
 			width: 50%;
 		}
+	}
+	.header__menu-lower:nth-child(2) {
+		margin-left: 0;
 	}
 	.header .submenu2 .container .lower-wrap {
 		display: block;
@@ -525,6 +551,9 @@
 	.header .submenu4 .card-btn {
 		width: 260px;
 		font-size: 14px;
+	}
+	.slick-list.draggable {
+		padding: 0 20px 0 20px;
 	}
 	.slider-item {
     padding-top: 20px;

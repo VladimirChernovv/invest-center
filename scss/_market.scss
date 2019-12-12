@@ -8,6 +8,10 @@
 	&__slider {
 		display: none;
 	}
+	&__main {
+		width: 100%;
+    max-width: 573px;
+	}
 }
 
 .services {
@@ -146,17 +150,24 @@
 				margin-right: 41px;
 			}
 			.services__data {
-				font-weight: 400;
-				font-size: 18px;
-				color: #8890A1;
-				text-transform: none;
+				// font-weight: 400;
+				// font-size: 18px;
+				// color: #8890A1;
+				// text-transform: none;
 				.services__george {
 					margin: 26px 0 15px 0;
+					font-weight: 400;
+					font-size: 18px;
+					color: #8890A1;
+					text-transform: none;
+				}
+				.services__dop {
+					display: flex;
 				}
 				.silver {
 					margin-top: 24px;
 				}
-				span {
+				p {
 					font-weight: 500;
 					color: #000;
 				}
@@ -204,7 +215,7 @@
 	}
 }
 
-/* 1024 - 1200 px */
+/* 1024 - 1200px */
 @media screen and (max-width: 1200px) {
 	.market {
 		.services__photo {
@@ -216,14 +227,14 @@
 	}
 }
 
-/* 768 - 1024 px */
+/* 768 - 1024px */
 @media screen and (max-width: 1024px) {
 	.market {
 		&__slider {
 			display: block;
 		}
-		&__main {
-			width: 49%;
+		.euro-ben {
+			margin-top: 36px;
 		}
 		
 		.services__item:nth-child(1) {
@@ -232,6 +243,7 @@
 		.services__item:nth-child(2) {
 			display: none;
 		}
+		
 		.services__card {
 			padding-top: 75px;
 		}
@@ -239,5 +251,56 @@
 			background-color: #bea08b;
 		}
 	}
+	.market .services__subtitle {
+		width: 425px;
+	}
+	
 }
 
+/* 576 - 768px */
+@media screen and (max-width: 768px) {
+	.market {
+		&__title {
+			font-size: 25px;
+		}
+		.market .services__subtitle {
+			width: 270px;
+		}
+		.services__card .services__benefit {
+			width: 250px;
+		}
+		.services__card .services__photo {
+			width: 28%;
+		}
+		.euro-ben {
+			margin-top: 56px;
+		}
+	}
+}
+
+/* 320 - 576px */
+@media screen and (max-width: 576px) {
+	.market {
+		&__title {
+			font-size: 20px;
+		}
+		.services__action {
+			font-size: 14px;
+		}
+		.services__card .services__photo {
+			width: 43%;
+		}
+	}
+	.market .services__card {
+		padding-bottom: 210px;
+	}
+	.services__card .services__subtitle {
+		width: 200px;
+		font-size: 18px;
+		margin-top: 9px;
+	}
+	.services__card .services__benefit {
+		display: none;
+	}
+	
+}

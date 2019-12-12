@@ -6,21 +6,27 @@
 
 }
 .services__heading {
-		font-weight: 500;
-		font-size: 18px;
-		text-transform: none;
-		color: #FF5D39;
-		margin-bottom: 25px;
-		img {
-			margin-right: 5px;
-		}
-		span {
-			color: #8890A1;
-			margin-left: 4px;
-		}
+	font-weight: 500;
+	font-size: 18px;
+	text-transform: none;
+	color: #FF5D39;
+	margin-bottom: 25px;
+	img {
+		margin-right: 5px;
 	}
-.services__heading_euro{
+	span {
+		color: #8890A1;
+		margin-left: 4px;
+	}
+}
+.services__heading_second {
+	display: none;
+}
+.services__heading_euro {
 	margin-bottom: 20px;
+}
+.services__icon {
+	display: none;
 }
 
 /* 1024 - 1320px */
@@ -50,9 +56,97 @@
 /* 768 - 1024px */
 @media screen and (max-width: 1024px) {
 	.metals {
-		.services__item:nth-child(2) {
+		&__remove {
+			display: block;
+		}
+		.services__wrap {
+			display: flex;
+			justify-content: space-between;
+		}
+		.services__data {
+			width: 100%;
+		}
+		.services__dop {
+			justify-content: space-between;
+		}
+		.services__heading {
+			cursor: pointer;
+		}
+		
+		.services__heading_second {
+			display: block;
+		}
+		.services__item:nth-child(1) {
+			// width: 100%; убрать display: none; т.к. для nth-child(2) я прописал display: none; что бы его скрыть и не понимаю как при клике на div открывалсяnth-child(2) с уже заданным display: none; 
 			display: none;
 		}
+		.services__item:nth-child(2) {
+			// display: none;
+			width: 100%;
+		}
+		
 	}
 	
+}
+
+/* 576 - 768px */
+@media screen and (max-width: 768px) {
+	.metals {
+		&__remove {
+			display: none;
+		}
+		table img {
+			display: none;
+		}
+		.services__del {
+			display: none;
+		}
+		.services__coin-wrap {
+			display: none;
+		}
+		.services__heading {
+			display: flex;
+    	justify-content: center;
+    	align-items: center;
+		}
+	}
+}
+
+/* 320 - 576px */
+@media screen and (max-width: 576px) {
+	.metals {
+		// table th {
+		// 	font-size: 9px;
+		// 	padding-right: 5px;
+		// }
+		table td {
+			font-size: 14px;
+		}
+		.services__table th {
+			font-size: 9px;
+			padding-right: 5px;
+		}
+		.services__heading {
+			font-size: 14px;
+		}
+		.services__action {
+			font-size: 12px;
+		}
+		.services__unit {
+			font-size: 14px;
+		}
+		.services__img {
+			display: none;
+		}
+		.services__icon {
+			display: block;
+		}
+		.services__information p {
+			font-size: 9px;
+		}
+		
+	}
+	.services__metals .services__cell .services__data .services__george {
+		font-size: 14px;
+	}
 }

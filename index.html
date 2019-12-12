@@ -67,7 +67,7 @@
             <a class="header__search" href="#">
               <img class="header__magnifier" src="./img/market/search-icon.svg" alt="search-icon">
             </a>
-            <a class="header__bar" href="#">
+            <a class="header__bar" id="sandwich" href="#">
               <img class="header__bar-icon" src="./img/menu/menu-bar.svg" alt="menu-bar">
             </a>
             <a class="header__tel" href="tel:+74959568626">+7 495 956 86 26</a>
@@ -415,7 +415,7 @@
               <div class="services__cell">
                 <p class="services__suptitle">Еврооблигации</p>
                 <h3 class="services__subtitle">Еврооблигации для всех.<br> Продажа еврооблигаций</h3>
-                <p class="services__benefit">
+                <p class="services__benefit euro-ben">
                   Фиксированная доходность выше,<br> чем по банковскому вкладу
                 </p>
               </div>
@@ -438,10 +438,16 @@
     <div class="container">
       <div class="metals__wrap">
 
-        <div class="services__item">
-          <div class="services__heading">
-            <img src="img/market/bill.svg" alt="bill">
-            Валюта <span>18.07.2019</span>
+        <div class="services__item" id="metal">
+          <div class="services__wrap">
+            <div class="services__heading">
+              <img src="img/market/bill.svg" alt="bill">
+              Валюта <span>18.07.2019</span>
+            </div>
+            <div class="services__heading services__heading_second">
+              <img src="img/market/coins.svg" alt="coin">
+              Монеты
+            </div>
           </div>
           <div class="services__table">
             <table class="services__chart">
@@ -486,18 +492,19 @@
             <a class="services__action" href="#">Курсы валют в отделениях Банка</a>
             <a class="services__arrow" href="#">
               <img class="services__img" src="img/market/arrow.svg" alt="arrow">
+              <img class="services__icon" src="img/market/short-arrow.svg" alt="short-arrow">
             </a>
           </div>
         </div>
 
-        <div class="services__item">
+        <div class="services__item" id="coin">
           <div class="services__heading services__heading_euro">
             <img src="img/market/coins.svg" alt="coin">
             Монеты из драгоценных металлов
           </div>
           <div class="services__metals">
             <div class="services__information">
-              <p>Вид</p>
+              <p class="services__del">Вид</p>
               <p>Номинал</p>
               <p>Покупка</p>
               <p>Продажа</p>
@@ -509,9 +516,12 @@
               
               <div class="services__data">
                 <p class="services__george">Георгий Победоносец (ММД)</p>
-                <span class="services__value">50</span>
-                <span class="services__buy">21 500</span>
-                <span class="services__sale">22 456</span>
+                <div class="services__dop">
+                  <p class="services__value">50</p>
+                  <p class="services__buy">21 500</p>
+                  <p class="services__sale">22 456</p>
+                </div>
+                
               </div>
             </div>
             <div class="services__cell lower">
@@ -521,9 +531,11 @@
               
               <div class="services__data">
                 <p class="services__george silver">Георгий Победоносец (серебро)</p>
-                <span class="services__value left">100</span>
-                <span class="services__buy">23 265</span>
-                <span class="services__sale">23 890</span>
+                <div class="services__dop">
+                  <p class="services__value left">100</p>
+                  <p class="services__buy">23 265</p>
+                  <p class="services__sale">23 890</p>
+                </div>
               </div>
             </div>
           </div>

@@ -135,5 +135,40 @@ body.addEventListener('click', function (e) {
 			submenu4.style.display = "none";
 		}
 	}
+
+	// Отрабатываем клик по header__bar на ширине меньше 768px
+
+	// Ширина окна
+	let wi = window.innerWidth
+		|| document.documentElement.clientWidth
+		|| document.body.clientWidth
+
+		if(wi < 769) {
+			let header__wrap = document.querySelector('.header__wrap')
+			let sandwich = document.getElementById('sandwich')
+			sandwich.addEventListener('click', show_menu)
+
+			function show_menu(e) {
+				e.preventDefault()
+				header__wrap.style.display = 'block'
+			//	header__wrap.classList.toggle('open')
+			}
+		}
+
+		// Скрываем показываем монеты на ширине меньше 768px
+	let coin = document.getElementById('coin')
+	let metal = document.getElementById('metal')
+
+	let services__heading_second = document.querySelector('.services__heading_second')
+
+	services__heading_second.addEventListener('click', show_coin)
+
+	function show_coin(e) {
+		e.stopPropagation()
+		console.log(55355354)
+
+		coin.style.display = 'block'
+		metal.style.display = 'none'
+	}
 });
 
