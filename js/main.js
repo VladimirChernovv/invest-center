@@ -19,6 +19,13 @@ $(function(){
 		arrows: false,
 	});
 
+	$('.advantages__slider').slick({
+
+		dots: true,
+		infinite: true,
+		arrows: false,
+	});
+
 	//Открывающееся верхнее меню
 	let titleWrap = document.querySelectorAll('.header__title-wrap');
 

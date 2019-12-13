@@ -77,11 +77,12 @@
 			display: block;
 		}
 		.services__item:nth-child(1) {
-			// width: 100%; убрать display: none; т.к. для nth-child(2) я прописал display: none; что бы его скрыть и не понимаю как при клике на div открывалсяnth-child(2) с уже заданным display: none; 
-			display: none;
+			width: 100%;
+			// убрать display: none; т.к. для nth-child(2) я прописал display: none; что бы его скрыть и не понимаю как при клике на div открывалсяnth-child(2) с уже заданным display: none; 
+			
 		}
 		.services__item:nth-child(2) {
-			// display: none;
+			display: none;
 			width: 100%;
 		}
 		
@@ -144,7 +145,6 @@
 		.services__information p {
 			font-size: 9px;
 		}
-		
 	}
 	.services__metals .services__cell .services__data .services__george {
 		font-size: 14px;
