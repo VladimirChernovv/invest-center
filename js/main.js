@@ -11,12 +11,7 @@ $(function(){
 
 	$('.market__slider').slick({
 		dots: true,
-		// infinite: true,
-		// arrows: false,
-		// slidesToShow: 1,
-		// autoplay: true,
 		arrows: false,
-		//autoplaySpeed: 3000,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		infinite: true,
@@ -47,7 +42,6 @@ $(function(){
 
 	function show_list(e) {
 		e.target.nextElementSibling.classList.toggle('open');
-
 	}
 
 	
@@ -174,13 +168,17 @@ body.addEventListener('click', function (e) {
 			}
 		}
 
-		// Скрываем показываем монеты на ширине меньше 768px
+	// Скрываем показываем монеты на ширине меньше 768px
 	let coin = document.getElementById('coin')
 	let metal = document.getElementById('metal')
 
 	let services__heading_second = document.querySelector('.services__heading_second')
 
+	let services__heading_third = document.querySelector('.services__heading_third')
+
 	services__heading_second.addEventListener('click', show_coin)
+
+	services__heading_third.addEventListener('click', show_metal)
 
 	function show_coin(e) {
 		e.stopPropagation()
@@ -188,6 +186,13 @@ body.addEventListener('click', function (e) {
 
 		coin.style.display = 'block'
 		metal.style.display = 'none'
+	}
+
+	function show_metal(e) {
+		e.stopPropagation()
+
+		coin.style.display = 'none'
+		metal.style.display = 'block'
 	}
 });
 

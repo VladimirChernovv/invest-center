@@ -254,7 +254,12 @@
 	.market .services__subtitle {
 		width: 425px;
 	}
-	
+	body > section.market > div > div.market__slider.slick-initialized.slick-slider.slick-dotted > ul {
+		display: flex;
+		position: absolute;
+		bottom: 96px;
+		left: 50%;
+	}
 }
 
 /* 576 - 768px */
@@ -293,13 +298,6 @@
 
 	body > header > div.header__slider.slick-initialized.slick-slider.slick-dotted > ul {
 		left: 0;
-	}
-
-	body > section.market > div > div.market__slider.slick-initialized.slick-slider.slick-dotted > ul {
-		display: flex;
-		position: absolute;
-		bottom: 96px;
-		left: 50%;
 	}
 }
 

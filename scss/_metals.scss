@@ -22,6 +22,9 @@
 .services__heading_second {
 	display: none;
 }
+.services__heading_third {
+	display: none;
+}
 .services__heading_euro {
 	margin-bottom: 20px;
 }
@@ -69,11 +72,17 @@
 		.services__dop {
 			justify-content: space-between;
 		}
+		.services__heading_euro {
+			display: none;
+		}
 		.services__heading {
 			cursor: pointer;
 		}
 		
 		.services__heading_second {
+			display: block;
+		}
+		.services__heading_third {
 			display: block;
 		}
 		.services__item:nth-child(1) {
@@ -109,6 +118,9 @@
 			display: flex;
     	justify-content: center;
     	align-items: center;
+		}
+		.services__heading_euro {
+			display: none;
 		}
 	}
 }
