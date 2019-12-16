@@ -64,6 +64,7 @@
 /* 320 - 576px */
 @media screen and (max-width: 576px) {
 	.news {
+		margin-top: 0;
 		&__wrap {
 			flex-direction: column;
 		}

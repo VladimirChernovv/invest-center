@@ -10,18 +10,30 @@ $(function(){
 	});
 
 	$('.market__slider').slick({
-		
 		dots: true,
-		infinite: true,
-		// slidesToShow: 2,
-		// slidesToScroll: 1,
-		// fade: true,
+		// infinite: true,
+		// arrows: false,
+		// slidesToShow: 1,
+		// autoplay: true,
 		arrows: false,
+		//autoplaySpeed: 3000,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true,
+				}
+			}
+		]
 	});
 
 	$('.advantages__slider').slick({
-
-		dots: true,
 		infinite: true,
 		arrows: false,
 	});

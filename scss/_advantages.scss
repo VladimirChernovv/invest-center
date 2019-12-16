@@ -167,11 +167,23 @@
 	}
 }
 
-/* 576 - 768px */
-@media screen and (max-width: 768px) {
+/* 320 - 576px */
+@media screen and (max-width: 576px) {
 	.advantages {
+		&__online {
+			padding-bottom: 183px;
+		}
+		&__market {
+			padding-bottom: 234px;
+		}
+		.mastercard {
+			padding-bottom: 214px;
+		}
 		&__title {
 			font-size: 18px;
+		}
+		.title-bank {
+			width: 200px;
 		}
 	}
 }

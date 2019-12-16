@@ -276,6 +276,31 @@
 			margin-top: 56px;
 		}
 	}
+
+	.slick-slide {
+
+		&:not(:last-child) {
+			margin-right: 15px !important;
+		}
+	}
+
+	.slick-list.draggable {
+		max-width: 1302px;
+		margin: 0 auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	body > header > div.header__slider.slick-initialized.slick-slider.slick-dotted > ul {
+		left: 0;
+	}
+
+	body > section.market > div > div.market__slider.slick-initialized.slick-slider.slick-dotted > ul {
+		display: flex;
+		position: absolute;
+		bottom: 96px;
+		left: 50%;
+	}
 }
 
 /* 320 - 576px */
@@ -292,7 +317,7 @@
 		}
 	}
 	.market .services__card {
-		padding-bottom: 210px;
+		padding-bottom: 240px;
 	}
 	.services__card .services__subtitle {
 		width: 200px;
